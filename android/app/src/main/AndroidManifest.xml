@@ -29,5 +29,8 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+        <receiver android:name="com.dexterous.flutterlocalnotifications.receivers.ActionReceiver" android:exported="true"/>
+        <receiver android:name="com.dexterous.flutterlocalnotifications.receivers.DismissedReceiver" android:exported="true"/>
     </application>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
 </manifest>
